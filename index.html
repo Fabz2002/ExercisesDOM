@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link href="dist/hamburgers.css" rel="stylesheet" />
+    <link href="/css/style.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div class="dashboard">
+      <header class="dashboard__header">
+        <h1 class="header__title">Ejercicios del DOM</h1>
+      </header>
+      <button class="dashboard__btn hamburger hamburguer--vortex" type="button">
+        <span class="hamburger-box">
+          <span class="hamburger-inner"></span>
+        </span>
+      </button>
+      <aside class="dashboard__aside">
+        <nav class="aside__menu">
+          <a class="menu__item" href="#">Reloj Digital y Alarma Sonora</a>
+          <a class="menu__item" href="#">Seccion 2</a>
+          <a class="menu__item" href="#">Seccion 3</a>
+          <a class="menu__item" href="#">Seccion 4</a>
+          <a class="menu__item" href="#">Seccion 5</a>
+        </nav>
+      </aside>
+      <main class="dashboard__main">
+        <section id="seccion1" class="main__section1">
+          <h2 class="section1__h3">Reloj Digital y Alarma Sonora</h2>
+          <div id="clock" class="section1__clock"></div>
+          <div class="section1__op">
+            <button id="activar-reloj" class="op__StartClock">
+              Iniciar Reloj
+            </button>
+            <button id="desactivar-reloj" class="op__EndClock">
+              Detener Reloj
+            </button>
+            <button id="activar-alarma" class="op__StartAlarm">
+              Iniciar Alarma
+            </button>
+            <button id="desactivar-alarma" class="op__EndAlarm">
+              Detener Alarma
+            </button>
+          </div>
+        </section>
+        <section id="seccion2" class="main__section2">
+          <h2>Seccion 2</h2>
+        </section>
+        <section id="seccion3" class="main__section3">
+          <h2>Seccion 3</h2>
+        </section>
+        <section id="seccion4" class="main__section4">
+          <h2>Seccion 4</h2>
+        </section>
+      </main>
+    </div>
+  </body>
+  <script src="./js/index.js" type="module"></script>
+</html>

@@ -1,0 +1,133 @@
+
+
+:root{
+    --main-font:sans-serif;
+    --font-size:16px;
+    --main-color:#f7df1e;
+    --second-modal-color:rgba(34,34,34,0.85);
+    --container-width:1200px;
+    --second-color:#222;
+}
+*,*.before,*.after{
+    box-sizing: inherit;
+}
+body{
+    margin: 0;
+    overflow-x: hidden;
+}
+
+html{
+    box-sizing: border-box;
+    font-family: var(--main-font);
+    font-size: var(--font-size);
+    scroll-behavior: smooth;
+}
+img{
+    max-width: 100%;
+    height: auto;
+}
+
+/* HEADER */
+.dashboard{
+   height: 100%;
+   width: 100%;
+}
+.dashboard__header{
+    position: sticky;
+    text-align: center;
+    background-color: var(--main-color);
+    top: 0;
+    padding:1rem;
+    color:var(--second-color)
+}
+.header__title{
+    font-weight: bold;
+    margin: 0;
+}
+
+/* BOTON HAMBURGUER */
+.dashboard__btn{
+    background-color: var(--main-color);
+    border-radius: 50%;
+    position: fixed;
+    bottom:1vh;
+    right: 1vh;
+    align-items: center;
+    padding:0;
+    width: 4rem;
+    height: 4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+}
+
+
+ /* aside */
+.dashboard__aside{
+    position: fixed;
+    width: 100%;
+    /* height: 100vh; */
+    background-color: var(--second-modal-color);
+    list-style: none;
+    top:0;
+    left:0;
+    right:0;
+    bottom: 0;
+    transition: transform .3s ease;
+    transform: translate(-100%,0);
+    z-index: 998;
+}
+.is-active{
+    transform: translate(0,0);
+}
+
+.aside__menu{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    width: inherit;
+    text-align: center;
+}
+.menu__item{
+    text-decoration: none;
+    color: var(--main-color);
+    font-size: 1.5rem;
+    padding: 2rem;
+    width: inherit;
+    transition: all .3s ease;
+    display: block;
+}
+.menu__item:hover{
+    color: var(--second-color);
+    background-color: var(--main-color);
+    font-weight: bold;
+}
+
+
+
+/* MAIN  */
+section{
+    margin: 0;
+    padding: 4rem 2rem;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    width: 100%;
+    max-width: var(--container-width);
+    min-height: 100vh;
+}
+
+
+
+
+.section1__h3{
+font-size: 1.5rem;
+}
+.section1__op{
+    display: flex;
+    justify-content: center;
+}
+
+
